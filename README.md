@@ -4,6 +4,10 @@
 A custom **X11 (XKB) keyboard layout** I made for x11 on Linux, based on **Colemak-DH** with a Czech symbols.  
 Designed for comfortable typing with **CapsLock as a modifier layer**.  
 
+<img width="1221" height="359" alt="image" src="https://github.com/user-attachments/assets/ee89db68-6103-45a1-b888-e10ac86e3c0b" />
+
+<sub>(Layout image made with this handy [website](https://keyboard-layout-editor.com/))</sub>
+
 ## ✨ Features
 
 - **Colemak-DH + Czech support** - type with one of the best layouts :)
