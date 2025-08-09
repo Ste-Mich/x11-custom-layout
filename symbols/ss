@@ -1,1 +1,82 @@
+default partial alphanumeric_keys
+xkb_symbols "basic" {
 
+    include "latin"
+    name[Group1]= "Czech";
+
+    key <CAPS> { [ ISO_Level5_Shift ] };
+
+    key <TLDE>	{[ asciitilde ]};
+    key <AE01>	{[ 1, exclam ]};
+    key <AE02>	{[ 2, at ]};
+    key <AE03>	{[ 3, numbersign ]};
+    key <AE04>	{[ 4, dollar ]};
+    key <AE05>	{[ 5, Percent ]};
+    key <AE06>	{[ 6, NoSymbol ]};
+    key <AE07>	{[ equal, plus ]};
+    key <AE08>	{[ 7, ampersand ]};
+    key <AE09>	{[ 8, asterisk ]};
+    key <AE10>	{[ 9, parenleft ]};
+    key <AE11>	{[ 0, parenright ]};
+    key <AE12>	{[ minus, underscore ]};
+
+    key <AD01>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ q, Q, asciitilde, NoSymbol, Escape, Escape, NoSymbol, NoSymbol ],
+	[ NoAction(), NoAction(), NoAction(), NoAction(), RedirectKey(keycode=<ESC>), NoAction(), NoAction(), NoAction()]};
+    key <AD02>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ w, W, NoSymbol, NoSymbol, Caps_Lock, Caps_Lock, NoSymbol, NoSymbol ]};
+    key <AD03>	{[ f, F, braceleft, bracketleft ]};
+    key <AD04>	{[ p, P, braceright, bracketright ]};
+    key <AD05>	{[ b, B, NoSymbol, NoSymbol ]};
+    key <AD06>	{[ dead_acute, dead_acute, braceleft, bracketleft ]};
+    key <AD07>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ j, J, NoSymbol, NoSymbol, Prior, NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD08>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ l, L, NoSymbol, NoSymbol, Home, Home, NoSymbol, NoSymbol ]};
+    key <AD09>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ u, U, NoSymbol, NoSymbol, Up, Up, NoSymbol, NoSymbol ]};
+    key <AD10>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ y, Y, yacute, Yacute, End, End, NoSymbol, NoSymbol ]};
+    key <AD11>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ semicolon, colon, bracketleft, division, Delete, Delete, NoSymbol, NoSymbol ]};
+    key <AD12>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ slash, question, bracketright, multiply, NoSymbol, NoSymbol, NoSymbol, NoSymbol ]};
+
+    key <AC01>	{
+	[ a, A, aacute, Aacute ]};
+    key <AC02>	{[ r, R, rcaron, Rcaron ]};
+    key <AC03>	{[ s, S, scaron, Scaron ]};
+    key <AC04>	{[ t, T, tcaron, Tcaron ]};
+    key <AC05>	{[ g, G, NoSymbol, NoSymbol ]};
+    key <AC06>	{[ dead_caron, dead_caron, braceright, bracketright ]};
+    key <AC07>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ m, M, NoSymbol, NoSymbol, Next, Next, NoSymbol, NoSymbol ]};
+    key <AC08>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ n, N, ncaron, Ncaron, Left, Left, NoSymbol, NoSymbol ]};
+    key <AC09>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ e, E, ecaron, Ecaron, Down, Down, NoSymbol, NoSymbol ]};
+    key <AC10>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ i, I, iacute, Iacute, Right, Right, NoSymbol, NoSymbol ]};
+    key <AC11>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ o, O, oacute, Oacute, BackSpace, NoSymbol, NoSymbol, NoSymbol ]};
+    key <BKSL>	{[apostrophe, quotedbl ]};
+
+    key <LSGT>	{[ z, Z, zcaron, Zcaron ]};
+    key <AB01>	{[ x, X, NoSymbol, NoSymbol ]};
+    key <AB02>	{[ c, C, ccaron, Ccaron ]};
+    key <AB03>	{[ d, D, dcaron, Dcaron ]};
+    key <AB04>	{[ v, V, NoSymbol, NoSymbol ]};
+    key <AB05>	{[ uring, Uring, NoSymbol, NoSymbol ]};
+    key <AB06>	{[ backslash, bar, NoSymbol, NoSymbol ]};
+    key <AB07>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ k, K, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB08>	{ type = "EIGHT_LEVEL_ALPHABETIC",
+	[ h, H, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB09>	{[ comma, less, eacute, Eacute ]};
+    key <AB10>	{[ period, greater, NoSymbol, NoSymbol ]};
+
+    key <SPCE>	{ type = "EIGHT_LEVEL",
+	[ space, space, space, space, Return, Return, Return, Return ]};
+
+    include "level3(ralt_switch)"
+};
